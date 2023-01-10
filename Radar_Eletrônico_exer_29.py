@@ -1,4 +1,4 @@
-velo = float(input('Qual a Velocidade do automóvel ?'))
+velo = float(input('Qual a Velocidade do automóvel ? '))
 if velo > 80:
     print('Você Foi multado devido o excesso de velocidade !!')
     print('Multa de R$ {:.2f}'.format((velo - 80) * 7))

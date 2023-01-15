@@ -1,5 +1,5 @@
 peso = int(input('Digite o seu peso (Kg): '))
-alt = float(input('Digite sua altura(M): '))
+alt = float(input('Digite sua altura (M): '))
 imc = (peso / alt ** 2)
 if imc < 18.5:
     print('IMC: {:.2f}'.format(imc))
@@ -15,6 +15,4 @@ elif imc <= 40:
     print('Você esta com Obesidade')
 else:
     print('IMC: {:.2f}'.format(imc))
-    print('Você esta com Obesidade mórbida')
-
-
+    print('Você esta com Obesidade Mórbida')

@@ -3,3 +3,4 @@ razao = int(input('Digite a razão: '))
 decimo = n1 + (10 - 1) * razao
 for c in range(n1, decimo + razao, razao):
   print('{} '.format(c), end='..')
+print('Fim da Progressão.')

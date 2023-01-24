@@ -1,8 +1,8 @@
-n1 = 0
+n1 =0
 val = 0
 val2 = 0
 
-while not n1 <= 5:
+while not 5 <= n1:
     val = int(input('Digite o primeiro valor: '))
     val2 = int(input('Digite o segundo valor: '))
     print('''Menu Inicial:
@@ -19,8 +19,10 @@ while not n1 <= 5:
     elif n1 == 3:
         if val > val2:
             print(' O primeiro valor é o maior')
-        else:
+        elif val < val2:
             print('O Segundo valor é o maior')
+        else:
+            print('Valorea digitados são iguais.')
     elif n1 == 4:
         print('Digite novos Valores.')
 if n1 == 5:

@@ -1,10 +1,12 @@
 sexo = ''
-M = 0
-F = 0
+M = ''
+F = ''
 while not sexo == 'M' and 'F':
-    sexo = str(input('Digite seu sexo [M/F]: ').upper())
+    sexo = str(input('Digite seu sexo [M/F]: ').upper()).strip()[0]
     if sexo == 'F':
         print('Seu Sexo é feminino')
-    if sexo == 'M':
+    elif sexo == 'M':
         print('Seu Sexo é Masculino')
+    else:
+        print('Dados Invalidos.')
 print('Fim do exercicio')

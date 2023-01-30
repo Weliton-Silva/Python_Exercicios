@@ -16,4 +16,4 @@ while not acertou:
             print('Mais... Tente Novamente.')
         elif n1 > sorte:
             print('Menos... Tente Novamente.')
-print('Parabéns ! Você acertou,foi Necessario. {} tentativas'.format(tent))
+print(f'Parabéns ! Você acertou,foi Necessario. {tent} tentativas')

@@ -3,19 +3,21 @@ from random import randint
 print('=-'*30)
 print('VAMOS JOGAS PAR OU IMPAR')
 print('=-'*30)
-n1 = int(input('Diga um Valor: '))
-jog = str(input('Par ou Impar ? [P/I]')).upper()[0]
+joga = ''
 sorte = random.randint(0, 10)
+n1 = 0
 cont = 0
 compu = sorte
+par = (n1 + sorte) % 2 ==0
 while True:
-     if jog == 'P':
-        if (n1 + sorte) % 2 == 0:
+    n1 = int(input('Diga um Valor ?'))
+    joga = str(input('Par ou impar ?')).upper()[0]
+        if joga ==  'P':
+            par == True
             print('Você Venceu !')
-    cont += 1
-    if jog == 'I':
-        if (n1 + sorte) % 2 == 1:
-            print('Você Venceu !')
-    cont +=1
-    if compu
-print('Você Perdeu')
+            cont += 1
+        elif joga == 'I':
+            par == 1
+
+
+

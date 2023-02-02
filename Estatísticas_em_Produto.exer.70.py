@@ -1,19 +1,19 @@
-print('-'*30)
-print('LOJAS SUPER BARATÃO')
-print('-'*30)
-total = 0
-maismil = 0
-barato = 0
-menos = 0
+print('-'*40)
+print('{:^40}'.format('LOJAS SUPER BARATÃO'))
+print('-'*40)
+maismil = barato = maior = conta = total = 0
+menos = ''
+
 while True:
     produto = str(input('Nome do Produto: '))
     preco = float(input('Preço: R$'))
-    if preco > 0:
-        total = total + preco
+    conta += 1
+    total += preco
     if preco > 1000:
         maismil += 1
-    #if preco > barato:
-
+    if conta == 1 or preco < barato:
+        barato = preco
+        menos = produto
     cont = ' '
     while cont not in 'SN':
         cont = str(input('Quer continuar ? [S/N]')).upper().split()[0]
@@ -21,4 +21,4 @@ while True:
         break
 print(f'O Total da compra foi de R${total:.2f}')
 print(f'Temos {maismil} custando mais de R$ 1000.00')
-print(f'O produto mais barato foi {barato} que custa R${menos:.2f}')
+print(f'O produto mais barato foi {menos} que custa R${barato:.2f}')

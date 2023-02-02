@@ -10,9 +10,9 @@ while True:
         sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
     if sexo == 'F' and idade < 20:
         menos20 += 1
-    elif idade >= 18:
+    if idade >= 18:
         maior18 += 1
-    elif sexo == 'M':
+    if sexo == 'M':
         homens += 1
     cont = ' '
     while cont not in 'SN':
@@ -22,4 +22,3 @@ while True:
 print(f'Total de pessoas com mais de 18 anos: {maior18}')
 print(f'Ao todo temos {homens} homens cadastrados.')
 print(f'E temos {menos20} mulheres com menos de 20 anos.')
-

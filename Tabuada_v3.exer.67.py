@@ -11,4 +11,3 @@ while True:
         break
 print('-'*30)
 print('Fim da Tabuada')
-

@@ -1,11 +1,11 @@
-valor = 0
-lista = list()
-cont = ''
-if valor != lista:
-    lista = valor
-else:
-    print('Valor duplicado')
-    while cont not in 'N':
-        valor = int(input('Digite um valor: '))
-        cont = str(input('Deseja continuar ? ')).upper()
-    print(lista.sort())
+valor = list()
+while True:
+    n = int(input('Digite um valor: '))
+    if n not in valor:
+        valor.append(n)
+    else:
+        print('Valor Duplicado ! Não vou adicionar.')
+    r = input('Deseja continuar ? [S/N] ').upper().split()[0]
+    if 'N' in r:
+        break
+print(f'Os valores Digitados foram {sorted(valor)}')

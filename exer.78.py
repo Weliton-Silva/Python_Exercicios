@@ -11,6 +11,12 @@ for cont in range(0, 5):
         if n1[cont] < menor:
             menor = n1[cont]
 print(f'Você digitou os valores {n1}')
-print(f'O maior valor digitado foi {max(n1)} na posição {n1.index(max(n1))}...')
-
-print(f'O menor valor digitado foi {min(n1)} na posição {n1.index(min(n1))}...')
+print(f'O maior valor digitado foi {maior} na posição ', end='')
+for cont, v in enumerate(n1):
+    if v == maior:
+        print(f'{cont}...', end='')
+print()
+print(f'O menor valor digitado foi {menor} na posição ', end='')
+for cont2, v in enumerate(n1):
+    if v == menor:
+        print(f'{cont2}...', end='')

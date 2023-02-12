@@ -9,6 +9,7 @@ while prox not in 'SN':
         prox = str(input('Deseja continuar ? [S/N]')).upper().strip()[0]
         if prox == 'N':
             break
+print('=-'*30)
 print(f'Foram digitados {contador} valores.')
 print(f'Os valores digitados em ordem decrescente são {sorted(valor, reverse=True)}')
 if valor.count(5) == True:

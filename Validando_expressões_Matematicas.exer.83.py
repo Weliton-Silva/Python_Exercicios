@@ -11,6 +11,7 @@ def is_balanced(expression):
     return not stack
 expression = input('Digite a expressão: ')
 if is_balanced(expression):
-    print('A expressão esta correta')
+    print('A expressão esta correta !')
 else:
-    print('A expressão esta errada!')
+    print('A expressão esta errada !')
+    

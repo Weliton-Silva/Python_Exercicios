@@ -1,20 +1,19 @@
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-total = 0
-linha = coluna = 0
+total = coluna3 = 0
 for l in range(0, 3):
-    linha += l
     for c in range(0, 3):
         matriz[l][c] = int(input(f'Digite um valor para {l, c}: '))
-        coluna += c
-
+        if matriz[l][c] % 2 == 0:
+            total += matriz[l][c]
 print('-='*30)
 print(matriz[0])
 print(matriz[1])
 print(matriz[2])
 print('=-'*30)
-total = sum(matriz)
-print(f'A soma de todos valores são {total}')
-print(f'')
+print(f'A soma de todos valores pares são {total}.')
+for l in range(0, 3 ):
+    coluna3 += matriz[l][2]
+print(f'A soma dos valores da terceira coluna é {coluna3}.')
 print(f'O maior valor da terceira linha é {max(matriz[1])}.')
 
 

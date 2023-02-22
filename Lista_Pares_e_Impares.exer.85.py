@@ -1,6 +1,5 @@
 valores = [[], []]
-num = 0
-pares = impares = 0
+pares = impares = num = 0
 for p in range(1, 8):
     num = (int(input(f'Digite o {p}º. valor: ')))
     if num % 2 == 0:

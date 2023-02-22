@@ -31,8 +31,3 @@ for p in copias:
     if p[1] == menor:
         print(f'{p[0]}', end=' ')
 print()
-
-
-
-#print(f'O maior peso foi de {copias[1]}. Peso de {copias[0]}')
-

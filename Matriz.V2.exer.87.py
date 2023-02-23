@@ -15,5 +15,3 @@ for l in range(0, 3):
     coluna3 += matriz[l][2]
 print(f'A soma dos valores da terceira coluna é {coluna3}.')
 print(f'O maior valor da terceira linha é {max(matriz[1])}.')
-
-

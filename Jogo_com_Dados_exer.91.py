@@ -16,6 +16,6 @@ print('=-'*15)
 print('=='*2, 'RANGING DOS JOGADORES', '=='*2)
 rank = sorted(joga.items(), key=itemgetter(1), reverse=True)
 for i, v in enumerate(rank):
-    print(f'{i + 1} lugar: {v[0]} com {v[1]}.')
+    print(f'{i + 1}º lugar: {v[0]} com {v[1]}.')
     sleep(1)
 print('Fim da partida')

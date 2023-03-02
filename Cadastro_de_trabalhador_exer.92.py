@@ -13,7 +13,7 @@ if lista["ctps"] == 0:
         print(f'{v} tem o valor {l}.')
 elif lista["ctps"] != 0:
     entrada = int(input('Ano de contratação: '))
-    lista["contratação"] = (entrada + 35) - nasci
+    lista["aposentadoria"] = (entrada + 35) - nasci
     lista["Salario"] = float(input('Salário: '))
     print('=-'*15)
     for v, l in lista.items():

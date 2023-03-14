@@ -7,7 +7,8 @@ def voto(ano):
     elif 16 <= idade < 18 or idade > 65:
         return f'Com {idade} anos: Voto Opcional.'
     else:
-        return f'Com {idade} anos: Voto Obrigatorio.'
+        return f'Com {idade} anos: Voto Obrigatório.'
+
 
 print('--'*15)
 nasc = (int(input('Em que ano você nasceu ? ')))

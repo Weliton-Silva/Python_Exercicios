@@ -13,5 +13,5 @@ def leiaint(msg):
     return valor
 
 
-n = leiaint('Digite um número')
+n = leiaint('Digite um número: ')
 print(f'Você acabou de digitar o número {n}')
